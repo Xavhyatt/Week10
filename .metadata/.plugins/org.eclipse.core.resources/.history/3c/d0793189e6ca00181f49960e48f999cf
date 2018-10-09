@@ -1,0 +1,20 @@
+package src.main.java.com.qa.java.Project_1;
+
+public class QAC {
+	static {
+		int pound = 1;
+		int dollar = 2;
+	}
+	static QAC R;
+
+	private QAC() {
+
+	}
+
+	public static QAC createObject() {
+		if (R == null) {
+			R = new QAC();
+		}
+		return R;
+	}
+}

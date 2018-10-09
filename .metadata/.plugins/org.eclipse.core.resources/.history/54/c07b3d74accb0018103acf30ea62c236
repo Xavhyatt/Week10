@@ -1,0 +1,25 @@
+package com.qa.java.Calculator1;
+
+import java.awt.BorderLayout;
+import java.awt.Frame;
+import java.awt.GridLayout;
+import java.awt.Panel;
+import java.awt.TextField;
+
+public class Calculator {
+
+	public static void main(String[]arg) {
+		Frame window = new Frame("Calculator");
+		Panel screen = new Panel();
+		Panel keys = new Panel ();
+		TextField T1;
+		for 
+		
+		GridLayout g1 = new GridLayout();
+		keys.setLayout(g1);
+		window.add(screen, BorderLayout.NORTH);
+		window.add(keys, BorderLayout.CENTER);
+		
+		
+	}
+}

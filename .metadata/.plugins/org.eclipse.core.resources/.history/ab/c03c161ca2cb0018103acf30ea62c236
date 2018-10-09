@@ -1,0 +1,15 @@
+package com.qa.java.calculator;
+
+import java.awt.TextField;
+
+public class Operations {
+	
+	TextField txt1, txt2, txt3;
+	
+	public Operations( TextField a, TextField b, TextField c) {
+		txt1 = a;
+		txt2 = b;
+		txt3 = c
+	}
+
+}

@@ -1,0 +1,10 @@
+package com.qa.java.Database;
+
+public class JDBC {
+
+	public static void main(String[]args) {
+		
+	
+	Connection conn = null;
+}
+	

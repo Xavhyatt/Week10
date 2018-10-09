@@ -1,0 +1,21 @@
+package src.main.java.com.qa.java.Project_1;
+
+import java.awt.BorderLayout;
+import java.awt.TextField;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class EventClass implements ActionListener {
+	TextField textField;
+	
+
+	public void actionPerformed(ActionEvent e) {
+		System.out.println("actionPerformed Method");
+		textField.setText("DDDD");
+		
+	}
+	public EventClass(TextField txt) {
+		textField = txt;
+	}
+
+}

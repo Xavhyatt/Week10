@@ -1,0 +1,22 @@
+package com.qa.java.Calculator1;
+
+import java.awt.BorderLayout;
+import java.awt.Frame;
+import java.awt.GridLayout;
+import java.awt.Panel;
+
+import javax.security.auth.callback.TextOutputCallback;
+
+public class Calculator {
+
+	public static void main(String[]arg) {
+		Frame window = new Frame("Calculator");
+		Panel screen = new Panel();
+		Panel keys = new Panel ();
+		
+		GridLayout g1 = new GridLayout();
+		keys.setLayout(g1);
+		window.add(screen, BorderLayout.NORTH);
+		windo
+	}
+}

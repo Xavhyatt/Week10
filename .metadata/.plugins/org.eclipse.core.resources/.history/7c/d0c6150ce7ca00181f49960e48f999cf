@@ -1,0 +1,14 @@
+package src.main.java.com.qa.java.Project_1;
+
+public class Runner {
+
+	public static void main(String args[]) {
+		QAC ref1, ref2, ref3;
+		ref1 = QAC.createObject();
+		ref2 = QAC.createObject();
+		ref3 = QAC.createObject();
+		System.out.println(QAC.pound);
+		System.out.println(QAC.pound);
+		System.out.println("");
+	}
+}

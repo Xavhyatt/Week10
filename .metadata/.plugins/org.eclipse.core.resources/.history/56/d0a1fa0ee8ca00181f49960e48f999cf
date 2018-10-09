@@ -1,0 +1,20 @@
+package src.main.java.com.qa.java.Project_1;
+
+public class Runner {
+
+	public static void main(String args[]) {
+		QAC ref1, ref2, ref3;
+		ref1 = QAC.createObject();
+		ref2 = QAC.createObject();
+		ref3 = QAC.createObject();
+		System.out.println(QAC.pound);
+		System.out.println(QAC.dollar);
+		ref1.setName("RBS");
+		ref2.setName("HSCB");
+		ref3.setName("RBS");
+		
+		System.out.println();
+		System.out.println(ref2.setName("RBS");
+		System.out.println(ref3.toString());
+	}
+}

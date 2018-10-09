@@ -1,0 +1,51 @@
+package src.main.java.com.qa.java.Project_1;
+import java.awt.*;
+public class FormGUI {
+
+	public static void create() {
+/*		for (int i = 1; i<6; i++) {
+			String frameName = "frame"+i;
+			Frame frameName = new Frame("Frame"+i);
+			for (int j=1; j<5; j++) {
+				
+				String button = "b"+j;
+				
+				Button button = new Button("Button"+i+j);
+				frameName.add(button, Borderlayout);
+				
+			}
+			
+		}
+		frame1.add(b1, Borderlayout.NORTH);
+	}*/
+		Frame frame1 = new Frame("Frame 1");
+		Button b1= new Button("1N");
+		Button b2= new Button("1E");
+		Button b3= new Button("1S");
+		Button b4= new Button("1W");
+		Button b5= new Button("1C");
+		frame1.add(b1, BorderLayout.NORTH);
+		frame1.add(b2, BorderLayout.EAST);
+		frame1.add(b3, BorderLayout.SOUTH);
+		frame1.add(b4, BorderLayout.WEST);
+		frame1.add(b5, BorderLayout.CENTER);
+		frame1.setSize(400,400);
+		frame1.setVisible(true);
+		
+		Frame frame2 = new Frame("Frame 2");
+		Button b2= new Button("2N");
+		Button b2= new Button("2E");
+		Button b3= new Button("2S");
+		Button b4= new Button("2W");
+		Button b5= new Button("2C");
+		frame2.add(b2, BorderLayout.NORTH);
+		frame2.add(b2, BorderLayout.EAST);
+		frame2.add(b3, BorderLayout.SOUTH);
+		frame2.add(b4, BorderLayout.WEST);
+		frame2.add(b5, BorderLayout.CENTER);
+		frame2.setSize(400,400);
+		frame1.setVisible(true);
+	}
+		
+		
+}

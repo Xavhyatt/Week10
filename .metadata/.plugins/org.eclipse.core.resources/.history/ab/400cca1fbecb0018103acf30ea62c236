@@ -1,0 +1,86 @@
+package com.qa.java.Calculator1;
+
+import java.awt.Button;
+import java.awt.TextField;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class Operations implements ActionListener {
+
+	TextField txt1;
+	String number1 = "";
+	double number2;
+	double result;
+
+	public Operations(TextField t1) {
+		txt1 = t1;
+	}
+
+	public void actionPerformed(ActionEvent e) {
+
+		Button btn = (Button) e.getSource();
+		String titleButton = btn.getLabel();
+
+		if (titleButton.equals("Clear")) {
+			number1 = nuu;
+			number2 = 0;
+			result = 0;
+			txt1.setText("");
+		}
+		if (titleButton.equals("+")) {
+			number2 = number2 + Double.parseDouble(number1);
+			txt1.setText("" + number2);
+			number1 = "";
+		}
+		if (titleButton.equals("-")) {
+			number2 = number2 + Double.parseDouble(number1);
+			txt1.setText("" + number2);
+			number1 = "";
+		}
+		if (titleButton.equals("*")) {
+			number2 = number2 + Double.parseDouble(number1);
+			txt1.setText("" + number2);
+			number1 = "";
+
+		}
+		if (titleButton.equals("/")) {
+			number2 = number2 + Double.parseDouble(number1);
+			txt1.setText(number1);
+			number1 = "";
+		}
+		if (titleButton.equals("=")) {
+			if (number1.substring(0, 1).equals("+")) {
+				number1 = number1.substring(1);
+				result = Double.parseDouble(number1) + number2;
+
+			}
+			if (number1.substring(0, 1).equals("-")) {
+				number1 = number1.substring(1);
+				result = number2 - Double.parseDouble(number1);
+
+			}
+			if (number1.substring(0, 1).equals("*")) {
+				number1 = number1.substring(1);
+				result = Double.parseDouble(number1) * number2;
+
+			}
+			if (number1.substring(0, 1).equals("/")) {
+				number1 = number1.substring(1);
+				result = number2 / Double.parseDouble(number1);
+
+			}
+			
+			number2 = result;
+			number1 = "";
+			System.out.println(number2);
+			System.out.println(number1);
+			txt1.setText(String.valueOf(result));
+
+		}
+
+		else {
+			number1 = number1 + titleButton;
+			txt1.setText(number1);
+		}
+	}
+}

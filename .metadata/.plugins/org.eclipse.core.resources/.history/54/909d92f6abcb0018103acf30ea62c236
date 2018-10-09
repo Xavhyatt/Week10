@@ -1,0 +1,13 @@
+package com.qa.java.Calculator1;
+
+import java.awt.Frame;
+import java.awt.Panel;
+
+public class Calculator {
+
+	public static void main(String[]arg) {
+		Frame window = new Frame("Calculator");
+		Panel screen = new Panel();
+		Panel keys = new Panel ("Keys");
+	}
+}

@@ -1,0 +1,25 @@
+package src.main.java.com.qa.java.Project_1;
+
+public class QAC {
+
+	static int pound = 1;
+	static int dollar = 2;
+	String name;
+	
+	static QAC reference;
+
+	private QAC() {
+
+	}
+
+	public static QAC createObject() {
+		if (reference == null) {
+			reference = new QAC();
+		}
+		return reference;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+}

@@ -1,0 +1,19 @@
+package src.main.java.com.qa.java.Project_1;
+
+import java.awt.BorderLayout;
+import java.awt.TextField;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class EventClass implements ActionListener {
+
+	public void actionPerformed(ActionEvent e) {
+		System.out.println("actionPerformed Method");
+		TextField textField = new TextField();
+		textField.setText("sdfsdf");
+		FormGUI.frame1.add(textField, BorderLayout.CENTER)
+		FormGUI.getFrame().add(textField, BorderLayout.CENTER);
+		FormGUI.getFrame().setVisible(true);
+	}
+
+}
