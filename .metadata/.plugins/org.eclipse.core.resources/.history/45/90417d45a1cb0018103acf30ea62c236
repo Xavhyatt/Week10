@@ -1,9 +1,0 @@
-package com.qa.java.calculator;
-
-public class Calculator {
-
-	public static void main(String[]args) {
-		Frame window = new Frame("Calculator");
-		
-	}
-}
